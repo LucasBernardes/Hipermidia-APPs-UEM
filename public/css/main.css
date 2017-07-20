@@ -68,7 +68,7 @@ a {
 }
 
 .primary-text {
-  color: #3F51B5 !important;
+  color: #45B649 !important;
 }
 
 .gray-text {
@@ -90,8 +90,8 @@ a {
 # BACKGROUND COLOR PALLETES
 --------------------------------------------------------------*/
 .bg-primary {
-  background-color: #3F51B5;
-  border-color: #3F51B5;
+  background-color: #45B649;
+  border-color: #45B649;
   color: #ffffff !important;
 }
 
@@ -114,11 +114,11 @@ a {
 }
 
 .bg-primary.small-nav:hover .child-nav {
-  background-color: #3F51B5;
+  background-color: #45B649;
 }
 
 .bg-primary.small-nav:hover .side-nav > li:not(.has-children) > a > span {
-  background-color: #3F51B5;
+  background-color: #45B649;
 }
 
 .bg-primary-300 {
@@ -1821,7 +1821,7 @@ a {
 # COLOR CLASSES
 --------------------------------------------------------------*/
 .color-primary {
-  color: #3F51B5 !important;
+  color: #45B649 !important;
 }
 
 .color-danger {
@@ -1860,7 +1860,7 @@ a {
 # BORDER COLORS
 --------------------------------------------------------------*/
 .border-primary {
-  border-color: #3F51B5;
+  border-color: #45B649;
 }
 
 .border-primary-300 {
@@ -2737,7 +2737,7 @@ a {
     border: 0px;
   }
   .primary-on-scroll .navbar-nav {
-    background: #3F51B5;
+    background: #45B649;
   }
   .bg-white .navbar-toggle-icon, .white-on-scroll .navbar-toggle-icon {
     color: #494949;
@@ -2991,7 +2991,7 @@ a {
 
 .cover-cta .card {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid #3F51B5;
+  border-bottom: 3px solid #45B649;
 }
 
 .particles-cta-section {
@@ -3128,7 +3128,7 @@ a {
 .sidebar .list-group-item.active {
   background-color: inherit;
   border: 0px;
-  border-left: 3px solid #3F51B5;
+  border-left: 3px solid #45B649;
 }
 
 .sidebar .list-group-item a {
@@ -3138,7 +3138,7 @@ a {
 }
 
 .sidebar .list-group-item a:hover {
-  background: #3F51B5;
+  background: #45B649;
   color: #ffffff;
 }
 
@@ -3309,7 +3309,7 @@ a {
 }
 
 .timeline-badge.primary {
-  background-color: #3F51B5 !important;
+  background-color: #45B649 !important;
 }
 
 .timeline-badge.success {
@@ -3780,7 +3780,7 @@ section.parallax .light-overlay, section.parallax .dark-overlay, section.paralla
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
-  background: #3F51B5;
+  background: #45B649;
   color: #ffffff;
   text-decoration: none;
 }
@@ -3817,7 +3817,7 @@ section.parallax .light-overlay, section.parallax .dark-overlay, section.paralla
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #3F51B5;
+  background: #45B649;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
