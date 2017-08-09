@@ -3434,6 +3434,10 @@ section.parallax .light-overlay, section.parallax .dark-overlay, section.paralla
 .bg-img-7 {
   background-image: url("../images/img-7.jpg") !important;
 }
+.bg-img-10 {
+  background-image: url("../images/demo-img-6.jpg") !important;
+}
+
 .bg-img-9 {
   background-image: url("../images/img-9.jpg") !important;
 }
