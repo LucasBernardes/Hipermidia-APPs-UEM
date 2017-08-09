@@ -27,6 +27,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <script>
   // Initialize Firebase
+  
   var config = {
     apiKey: "AIzaSyB1RwTB9L4Cyu9iMbPwLr45mpkc1aF2UnE",
     authDomain: "uem-mobile.firebaseapp.com",
@@ -36,6 +37,45 @@
     messagingSenderId: "309142004357"
   };
   firebase.initializeApp(config);
+  database = firebase.database();
+
+  var ref = database.ref('acesso');
+  ref.once('value', gotData, errData);
+  var totalAcesso = 1;
+  
+
+function gotData(data){
+
+    totalAcesso = data.val();
+    console.log("gravei total acesos igual");
+    console.log(totalAcesso);
+    //var ref2 = database.ref('acesso');
+    //ref2.push(dataNovo);
+    //acessoFunciton();
+    //document.getElementById("totalField").value = totalAcesso + 1;
+    document.getElementById("totalField").innerHTML=totalAcesso; 
+    acessoFunciton();
+}
+function errData(err){
+    console.log('Error!');
+    console.log(err);
+
+}
+function acessoFunciton(){
+    console.log(totalAcesso);
+    var novoAcesso = parseInt(this.totalAcesso) + 1;
+    console.log("olha oq vo grava");
+
+    console.log(novoAcesso);
+    console.log("era isso /");
+    var data = novoAcesso;
+    
+    database = firebase.database();
+    var ref = database.ref('acesso');
+    ref.set(data);
+
+}
+
 </script>
 	<div class="main-wrapper">
 		<div class="main-wrapper-inner">
@@ -97,7 +137,7 @@
 									<div class="col-sm-6">
 										<h6 class="dropdown-header"><i class="icon ion-more"></i>Móveis - iOS - Android<i class="icon ion-more"></i> </h6>
 		                                <a class="dropdown-item" href="single-service.html"><i class="icon ion-ios-camera-outline"></i> Menu do aluno</a>
-		                            	<a class="dropdown-item" href="single-service.html"><i class="icon ion-ios-lightbulb-outline"></i> Reserva de sala</a>
+		                            	<a class="dropdown-item" href="single-service-reserva.html"><i class="icon ion-ios-lightbulb-outline"></i> Reserva de sala</a>
 		                          	</div>
 								</div>
                             </div>
@@ -390,8 +430,8 @@
 
                         <div class="row pt-3 counter-boxes">
                             <div class="col-sm-6 col-md-3 mb-3 mb-sm-0">
-                                <h2 class="counter">5</h2>
-                                <h5 class="light-black-text">Numero de desenvolvedores</h5>
+                                <h2 id="totalField" class="counter">0</h2>
+                                <h5 class="light-black-text">Page Views</h5>
                             </div>
                             <!-- /.col-sm-6 col-md-3 mb-3 mb-sm-0 -->
                             <div class="col-sm-6 col-md-3 mb-3 mb-sm-0">
@@ -750,6 +790,7 @@
 	 ga('send', 'pageview');
 
 	</script>
+
 </body>
 
 </html>
